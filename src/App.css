@@ -42,14 +42,14 @@
 }
 
 body {
-  background-color: steelblue;
+  background-color: rgb(27, 52, 75);
   font-family: 'American Typewriter', sans-serif;
   color: white
 }
 
 header {
   /* background-color: #333; */
-  background-image: url('/assets/texture-16.jpg');
+  background-image: url('/assets/texture-33.jpg');
   padding: 1em;
   margin-bottom: 1em;
 }

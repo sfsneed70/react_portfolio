@@ -8,7 +8,7 @@ export default function About() {
 
   return (
     <div className="mx-5 my-5 fs-5">
-      <h1>About me</h1>
+      {/* <h1>About me</h1> */}
       <img src="assets/avatar2.jpg" alt="person icon" style={iconStyle} className="rounded-circle mx-4 my-4"/>
       <p>
         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
