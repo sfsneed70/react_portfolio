@@ -2,7 +2,7 @@ export default function Resume() {
   return (
     <div className="mx-5 my-5 fs-5">
       <h1>Resume</h1>
-      <p>Download my <a href="src/assets/Resume.pdf" className="link-info" download>Resume</a></p>
+      <p>Download my <a href="assets/Resume.pdf" className="link-info" download>Resume</a></p>
       <p>
         Front-end Proficiencies
         <ul>
