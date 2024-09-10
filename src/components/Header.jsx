@@ -1,10 +1,61 @@
+import { Link, useLocation } from "react-router-dom";
+
 const Header = () => {
+  const currentPage = useLocation().pathname;
 
   return (
     <header>
-      <h1>Stephen Sneed</h1>
+      {/* <h1>Stephen Sneed</h1> */}
+      <nav className="navbar navbar-expand-lg navbar-dark py-5 p-5">
+        <a className="navbar-brand fs-1">Stephen Sneed</a>
+        <ul className="navbar-nav ms-auto fs-2">
+          <li className="nav-item">
+            <Link
+              to="/"
+              // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+              className={currentPage === "/" ? "nav-link active" : "nav-link"}
+            >
+              About me
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/Portfolio"
+              // This is a conditional (ternary) operator that checks to see if the current page is "Home"
+              // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
+              className={
+                currentPage === "/Portfolio" ? "nav-link active" : "nav-link"
+              }
+            >
+              Portfolio
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/Contact"
+              // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+              className={
+                currentPage === "/Contact" ? "nav-link active" : "nav-link"
+              }
+            >
+              Contact
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/Resume"
+              // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+              className={
+                currentPage === "/Resume" ? "nav-link active" : "nav-link"
+              }
+            >
+              Resume
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
-}
+};
 
 export default Header;
