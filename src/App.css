@@ -48,8 +48,7 @@ body {
 }
 
 header {
-  /* background-color: #333; */
-  background-image: url('/assets/texture-33.jpg');
+  background-image: url('/texture-33.jpg');
   padding: 1em;
   margin-bottom: 1em;
 }
