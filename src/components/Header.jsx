@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
@@ -6,10 +5,9 @@ const Header = () => {
 
   return (
     <header>
-
+      {/* <h1>Stephen Sneed</h1> */}
       <nav className="navbar navbar-expand-lg navbar-dark py-5 p-5">
         <a className="navbar-brand fs-1">Stephen Sneed</a>
-
         <ul className="navbar-nav ms-auto fs-2">
           <li className="nav-item">
             <Link
@@ -56,7 +54,6 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-
     </header>
   );
 };
