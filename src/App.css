@@ -52,3 +52,12 @@ header {
   padding: 1em;
   margin-bottom: 1em;
 }
+
+button {
+  background-color: #6b6fbc;
+  color: white;
+  padding: 0.5em;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+}

@@ -23,8 +23,9 @@ function Contact() {
   };
 
   const validateInput = (e) => {
-    // setErrorMessage("");
+    // Getting the value and name of the input which triggered the change
     const { name, value } = e.target;
+
     if (name === "email") {
       if (!validateEmail(value)) {
         setErrorMessage("email address is invalid.");
