@@ -5,7 +5,6 @@ export default function About() {
   const iconStyle = {
     width: '128px',
     height: '128px',
-    backgroundColor: 'white',
   };
 
   return (
