@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { validateEmail } from "../utils/helpers.js";
 
-function Contact() {
+export default function Contact() {
   // Here we set two state variables for firstName and lastName using `useState`
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -100,5 +100,3 @@ function Contact() {
     </div>
   );
 }
-
-export default Contact;

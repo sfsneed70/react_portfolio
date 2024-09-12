@@ -1,6 +1,6 @@
 import MyResume from '../assets/Resume.pdf';
 
-function Resume() {
+export default function Resume() {
   return (
     <div className="mx-5 my-5 fs-5">
       <h1>Resume</h1>
@@ -31,5 +31,3 @@ function Resume() {
     </div>
   );
 }
-
-export default Resume;

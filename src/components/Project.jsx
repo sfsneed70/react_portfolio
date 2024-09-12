@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
-function Project({ project }) {
+export default function Project({ project }) {
 
   const imageStyle = {
     width: '100%',
@@ -32,5 +32,3 @@ function Project({ project }) {
     </div>
   );
 }
-
-export default Project;
