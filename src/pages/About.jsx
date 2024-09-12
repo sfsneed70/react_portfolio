@@ -1,4 +1,4 @@
-import * as images from '../assets';
+import { Avatar } from '../assets';
 
 export default function About() {
 
@@ -11,7 +11,7 @@ export default function About() {
   return (
     <div className="mx-5 my-5 fs-5">
       {/* <h1>About me</h1> */}
-      <img src={images['Avatar']} alt="person icon" style={iconStyle} className="rounded-circle mx-4 my-4"/>
+      <img src={Avatar} alt="person icon" style={iconStyle} className="rounded-circle mx-4 my-4"/>
       <p>
         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
         Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
