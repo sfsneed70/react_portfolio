@@ -11,14 +11,14 @@ function Project({ project }) {
       <img
         src={images[name]}
         alt={name}
-        className="project-bg"
+        className="project-bg p-2"
       />
       <div className="project-text">
         <h3>
-          <a href={link}>{name}</a>
+          <a href={link} className="p-2 link-light">{name}</a>
           &nbsp;
           <a href={repo}>
-            <FontAwesomeIcon icon={faGithub}/>
+            <FontAwesomeIcon icon={faGithub} className="px-2" inverse size="lg"/>
           </a>
         </h3>
         <p>{description}</p>
