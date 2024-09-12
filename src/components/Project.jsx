@@ -4,14 +4,21 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 function Project({ project }) {
 
+  const imageStyle = {
+    width: '100%',
+    height: '75%',
+    objectFit: 'cover',
+  }
+
   const { name, repo, link, description } = project;
 
   return (
-    <div className="project p-2" key={name}>
+    <div className="project my-4 w-25 col" key={name}>
       <img
         src={images[name]}
         alt={name}
-        className="project-bg p-2"
+        className="project-bg p-2 img-fluid"
+        style={imageStyle}
       />
       <div className="project-text">
         <h3>
