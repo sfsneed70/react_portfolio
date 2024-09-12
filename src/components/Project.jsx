@@ -21,7 +21,7 @@ function Project({ project }) {
             <FontAwesomeIcon icon={faGithub} className="px-2" inverse size="lg"/>
           </a>
         </h3>
-        <p>{description}</p>
+        <p className="p-2">{description}</p>
       </div>
     </div>
   );
