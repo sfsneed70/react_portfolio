@@ -16,10 +16,10 @@ export default function Project({ project }) {
       <img
         src={image}
         alt={name}
-        className="project-bg p-2 img-fluid"
+        className="p-2 img-fluid"
         style={imageStyle}
       />
-      <div className="project-text">
+      <div>
         <h3>
           <a href={link} className="p-2 link-light">{name}</a>
           &nbsp;
