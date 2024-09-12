@@ -1,4 +1,4 @@
-import { Avatar } from '../assets';
+import Avatar from '../assets/avatar2.jpg';
 
 export default function About() {
 

@@ -1,4 +1,3 @@
-import * as images from '../assets/projects';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
@@ -10,12 +9,12 @@ function Project({ project }) {
     objectFit: 'cover',
   }
 
-  const { name, repo, link, description } = project;
+  const { name, repo, link, description, image } = project;
 
   return (
-    <div className="project my-4 w-25 col" key={name}>
+    <div className="col-lg-4" key={name}>
       <img
-        src={images[name]}
+        src={image}
         alt={name}
         className="project-bg p-2 img-fluid"
         style={imageStyle}
