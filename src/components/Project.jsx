@@ -12,7 +12,7 @@ export default function Project({ project }) {
   const { name, repo, link, description, image } = project;
 
   return (
-    <div className="col-lg-4" key={name}>
+    <div className="col-lg-4 px-2 py-2" key={name}>
       <img
         src={image}
         alt={name}
